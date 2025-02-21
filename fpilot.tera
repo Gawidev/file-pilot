@@ -1,0 +1,44 @@
+---
+whiskers:
+    version: "2.5.1"
+    hex_format: "{{R}}{{G}}{{B}}{{Z}}"
+accent: teal
+select: blue
+---
+{% set selection = flavor.colors[select] | mix(color=base, amount=0.5) %}
+		"{{ flavor.name }}":
+		{
+			"Clear": "{{ crust.hex }}",{# draw clear color #}
+			"Caption": "{{ crust.hex }}",
+			"Background": "{{ base.hex }}",
+			"Surface": "{{ mantle.hex }}",
+			"Foreground": "{{ surface1.hex }}",
+			"Inner": "{{ crust.hex }}",
+			"Border": "{{ surface0.hex }}",
+			"Outline": "{{ surface1.hex }}",
+			"Separator": "{{ surface0.hex }}",
+			"AlternatingRow": "{{ mantle.hex }}",
+			"IconTint": "{{ flavor.colors[accent].hex }}",
+			"Text": "{{ text.hex }}",
+			"Secondary": "{{ subtext0.hex }}",
+			"Group": "{{ subtext1.hex }}",
+			"File": "{{ subtext0.hex }}",
+			"Folder": "{{ subtext1.hex }}",
+			"Warning": "{{ red.hex }}",{# No separate Error color #}
+			"Progress": "{{ blue.hex }}",{# (Slider/Toggle fill color) #}
+			"Selection": "{{ selection.hex }}",
+			"RectSelection": "{{ sapphire.hex }}",
+			"Match": "{{ rosewater.hex }}",
+			"Hidden": "4D4D4D",{# brightness value: opacity control of file/folder col #}
+			"Hover": "595959",{# brightness value: blends between selection col & background col" #}
+			"Disabled": "595959",{# brightness value: opacity control of ui controls #}
+			"ContentHover": "{{ mauve.hex }}",
+			"ContentSelection": "{{ text.hex }}",
+			"ContentDisabledSelection": "{{ maroon.hex }}",
+			"OutlineHover": "{{ lavender.hex }}",{# UI textbox controls etc. #}
+			"OutlineSelection": "{{ blue.hex }}",{# 〃 #}
+			"OutlineDisabledSelection": "{{ overlay0.hex }}",{# 〃 #}
+			"MatchHover": "{{ sky.hex }}",
+			"MatchSelection": "{{ pink.hex }}",
+			"MatchDisabledSelection": "{{ flamingo.hex }}"
+		}
