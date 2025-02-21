@@ -5,8 +5,7 @@ whiskers:
 accent: teal
 select: blue
 ---
-{% set selection = flavor.colors[select] | mix(color=base, amount=0.5) %}
-		"{{ flavor.name }}":
+{% set selection = flavor.colors[select] | mix(color=base, amount=0.5) %}		"{{ flavor.name }}":
 		{
 			"Clear": "{{ crust.hex }}",{# draw clear color #}
 			"Caption": "{{ crust.hex }}",
