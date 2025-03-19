@@ -9,6 +9,6 @@ select: blue
 match: pink
 ---
 {% for _, flavor in flavors -%}
-{{ read_file(path="themes/" ~ flavor.identifier ~ ".json") }}
+{{ read_file(path="../themes/" ~ flavor.identifier ~ ".json") }}
 {%- if not loop.last %},{% endif %}
 {% endfor %}
