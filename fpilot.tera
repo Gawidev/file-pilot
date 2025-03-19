@@ -2,6 +2,9 @@
 whiskers:
     version: "2.5.1"
     hex_format: "{{R}}{{G}}{{B}}{{Z}}"
+    matrix:
+        - flavor
+    filename: "themes/{{flavor.identifier}}.json"
 icons: teal
 fill: blue
 select: blue
@@ -33,7 +36,7 @@ match: pink
 			"Hidden": "4D4D4D",				{# brightness value: opacity control of file/folder col #}
 			"Hover": "595959",				{# brightness value: blends between selection col & background col" #}
 			"Disabled": "595959",			{# brightness value: opacity control of ui controls #}
-			"ContentHover": "{{ lavender.hex }}",				{# Item Text Color #}
+			"ContentHover": "{{ text.hex }}",				{# Item Text Color #}
 			"ContentSelection": "{{ text.hex }}",				{# 〃 #}
 			"ContentDisabledSelection": "{{ maroon.hex }}",		{# 〃 #}
 			"OutlineHover": "{{ lavender.hex }}",				{# UI textbox controls etc. #}
