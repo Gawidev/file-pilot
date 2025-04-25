@@ -1,4 +1,4 @@
-		"Latte":
+		"Catppuccin Latte":
 		{
 			"Clear": "DCE0E8",
 			"Caption": "DCE0E8",
@@ -34,7 +34,7 @@
 			"MatchSelection": "EA76CB",
 			"MatchDisabledSelection": "EA76CB"
 		},
-		"Frappé":
+		"Catppuccin Frappé":
 		{
 			"Clear": "232634",
 			"Caption": "232634",
@@ -70,7 +70,7 @@
 			"MatchSelection": "F4B8E4",
 			"MatchDisabledSelection": "F4B8E4"
 		},
-		"Macchiato":
+		"Catppuccin Macchiato":
 		{
 			"Clear": "181926",
 			"Caption": "181926",
@@ -106,7 +106,7 @@
 			"MatchSelection": "F5BDE6",
 			"MatchDisabledSelection": "F5BDE6"
 		},
-		"Mocha":
+		"Catppuccin Mocha":
 		{
 			"Clear": "11111B",
 			"Caption": "11111B",
@@ -141,4 +141,4 @@
 			"MatchHover": "F5C2E7",
 			"MatchSelection": "F5C2E7",
 			"MatchDisabledSelection": "F5C2E7"
-		}
+		},

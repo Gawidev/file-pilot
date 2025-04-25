@@ -1,10 +1,9 @@
 ---
 whiskers:
-    version: "2.5.1"
+    version: "^2.5.1"
     hex_format: "{{R}}{{G}}{{B}}{{Z}}"
     filename: "themes/all.json"
 ---
 {% for _, flavor in flavors -%}
-{{ read_file(path="../themes/" ~ flavor.identifier ~ ".json") }}
-{%- if not loop.last %},{% endif %}
+{{ read_file(path="../themes/" ~ flavor.identifier ~ ".json") }},
 {% endfor %}
